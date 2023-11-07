@@ -1,4 +1,5 @@
 # EX 3 SubQueries, Views and Joins 
+## DATE: 29/08/2023
 ## Aim:
 To view implement SubQueries, Views and Joins.
 
@@ -90,7 +91,6 @@ SELECT ename,job,sal FROM EMP WHERE sal = (SELECT MIN(sal) FROM EMP);
 ```
 SELECT ename,job FROM EMP WHERE deptno = 10 AND job IN (SELECT job FROM EMP WHERE job = 'sales');
 ```
-
 ### OUTPUT:
 ![Alt text](image-2.png)
 
